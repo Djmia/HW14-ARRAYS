@@ -10,18 +10,16 @@ public class Main {
          System.out.println(myDays[6]);
          System.out.println(Arrays.toString(myNum));
            System.out.println(Arrays.toString(myDays));
-         System.out.println("================");
-         System.out.println();
-         
+         System.out.println("================\n");
+                 
      
          
          int [] myNum2 = new int [6];
          myNum2 [1] = 100;
          myNum2 [4] = 200;
          System.out.println(Arrays.toString(myNum2));
-         System.out.println("================");
-          System.out.println();
-         
+         System.out.println("================\n");
+                   
          
          int [] myNum3 = {2,4,6,8,10};
          int broi = myNum3.length;
@@ -34,6 +32,20 @@ public class Main {
          }
         
        System.out.println(Arrays.toString(reversed));
+        System.out.println("================\n");
+        
+        // 1. Намиране на най-дългото име от масов
+        String [] names = {"Milen", "Stela", "Michail"};
+        int size = names.length;
+        System.out.println(size);
+        String longestName = names[0];
+        for (int i = 1; i < size; i++) {
+          if (names[i].length() > longestName.length()) {
+            longestName = names[i];
+          }
+        }
+        System.out.println(longestName);
         
     }
+    
 }
