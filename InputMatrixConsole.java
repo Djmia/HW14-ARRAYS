@@ -13,6 +13,7 @@ public class Main {
         } 
         
         
+        //ЦИКЪЛ ЗА ВЪВЕЖДАНЕ ПРЕЗ КОНЗОЛАТА И ПЕЧАТ
         
         System.out.println("Въведи последователно стойности на матрицата за: " + "\nбр.редове: " + rows + "\nбр.колони: " + cols);
         int[][] matrix = new int[rows][cols];
@@ -26,7 +27,7 @@ public class Main {
         
         
 
-
+        // ЦИКЪЛ ЗА ПЕЧАТ КАТО МАТРИЦА
         for (int row = 0; row < matrix.length; row++) {
         for (int col = 0; col < matrix[0].length; col++) {
         System.out.printf("%d ", matrix[row][col]);
