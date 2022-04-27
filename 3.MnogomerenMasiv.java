@@ -35,14 +35,17 @@ public class Main {
         
         
         // 5. Въвеждане на матрица от конзолата
-        Scanner input = new Scanner(System.in);
-        int rows = input.nextInt();
-        int cols = input.nextInt();
-        for (int row = 0; row < rows; row++) {
-          for (int cow = 0; cow <cols; cow++)
-          matrix[row][cow] = input.nextInt();
-        }
-        System.out.println(Arrays.deepToString(matrix));
+                Scanner input = new Scanner(System.in);
+int rows = input.nextInt();
+int cols = input.nextInt();
+int[][] matrix = new int[rows][cols];
+for (int row = 0; row < rows; row++) {
+for (int col = 0; col < cols; col++) {
+  System.out.printf("matrix[%d,%d] = ", row, col);
+matrix[row][col] = input.nextInt();
+}
+}
+System.out.println(Arrays.deepToString(matrix));
         
         
     }
